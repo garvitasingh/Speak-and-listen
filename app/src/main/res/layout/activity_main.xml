@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="30dp"
+    tools:context=".MainActivity">
+
+    <!--To add text in the app-->
+    <TextView
+        android:id="@+id/Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="2 * 2"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <!--when you press this button it will
+        convert text into speech-->
+    <Button
+        android:id="@+id/btnText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Tap to read" />
+
+    <!--To display the name of GeeksForGeeks -->
+    <ImageView
+        android:id="@+id/mic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="104dp"
+        android:src="@drawable/ic_baseline_mic_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_gravity="center"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/speech_to_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:text="Tap mic and speak answer"
+        app:layout_constraintEnd_toEndOf="@+id/iv_mic"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="@+id/iv_mic"
+        app:layout_constraintTop_toBottomOf="@+id/iv_mic" />
+
+    <TextView
+        android:id="@+id/remark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:text=" "
+        app:layout_constraintEnd_toEndOf="@+id/iv_mic"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="@+id/iv_mic"
+        app:layout_constraintTop_toBottomOf="@+id/iv_mic" />
+
+</LinearLayout>
