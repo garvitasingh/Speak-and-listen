@@ -99,6 +99,7 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     intValue = Integer.parseInt(Speech_to_text.getText().toString());
                 } catch (NumberFormatException e) {
+                    intValue=0;
                     Toast.makeText(MainActivity.this, "Only numeric answer is allowed",
                                     Toast.LENGTH_LONG).show();
                 }
